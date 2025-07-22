@@ -14,6 +14,8 @@ public class Doremon {
 		n="aadesh";
 		age=21;
 	}
+	
+
 	{
 		System.out.println("C insde non-staic block 2");
 		n="pooja";
@@ -22,7 +24,13 @@ public class Doremon {
 
 
 	public static void main(String[] args) {
-	
+		
+		System.out.println("Main start");
+		Doremon d1 = new Doremon("DOREMON", 255);
+		
+		System.out.println(d1.n);
+		System.out.println(d1.age);
+		System.out.println("Main End");
 	}
 
 }
